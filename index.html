@@ -1,60 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Страноведение</title>
-    <link rel="stylesheet" href="assets/css/country-capital.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-
-            crossorigin="anonymous"></script>
-    <script src="assets/js/country-capital.js"></script>
-</head>
-<body>
-<div class="game">
-    <div class="post-game">
-        <p class="post-game__title">Игра завершена</p>
-        <div class="final-score">
-            <span class="final-score__title">Ваш результат: </span>
-            <span class="final-score__value">0</span>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Layout</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet
+        ">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <div class="body-wrap">
+            <div class="header-email-submit">
+                <h3>Enter your email for 10$ OFF instantly!<span>*</span></h3>
+                <input type="email" id="email-submit" name="email-submit" placeholder="Your email addres">
+                <button type="submit">SUBMIT & GET 10$ OFF</button>
+            </div>
+            <header>
+                <div class="header-main">
+                    <a href="tel:1-844-896-6462" class="phone-number-mobile">
+                        <i class="fa fa-phone-square phone-icon" aria-hidden="true"></i>
+                    </a>
+                    <div class="main-menu">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <span>MENU</span>
+                    </div>
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./images/logo.png" alt="Company Logo">
+                        </a>
+                    </div>
+                    <div class="shop-info">
+                        <i class="fa fa-phone-square phone-icon" aria-hidden="true"></i>
+                        <span class="phone-text">CALL TO ORDER</span>
+                        <a href="tel:1-844-896-6462" class="phone-number">1-844-896-6462</a>
+                        <a href="#" class="login-button">LOGIN</a>
+                        <i class="fa fa-cube cube-ico" aria-hidden="true"></i>
+                        <span class="in-cart-orders">0</span>
+                    </div>
+                </div>
+            </header>
+            <section class="product clr">
+                <div class="wrap ">
+                    <div class="product-image">
+                        <img class="label" src="./images/label.png" alt="product-label">
+                        <span class="zoom-image">+</span>
+                        <span class="zoom-words-mobile">VIEW MORE IMAGES</span>
+                        <img class="main-image" src="./images/product-main.png" alt="Product name">
+                        <div class="image-gallery">
+                            <img class="selected" src="./images/product-main.png" alt="product-name">
+                            <img src="./images/product-main-back.png" alt="product-name">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h1 class="product-name">Advanced Therapy System</h1>
+                        <div class="product-rating">
+                            <img src="./images/stars.png" alt="star-quantity">
+                            <span class="count-rating">8709 Reviews</span>
+                        </div>
+                        <ul>
+                            <li>17 Key ACTIVE ingedients</li>
+                            <li>Revives damaged and distressed hair</li>
+                            <li>Supports healthy scalp, regenerates hair, and revitalizes follicles</li>
+                            <li>Adds body, increases volume, and thickens hair</li>
+                        </ul>
+                        <div class="product-price">
+                            <span class="price">$39.99</span>
+                            <span class="old-price">Reg. <span>$59.99</span><br>33% Savings!</span>
+                        </div>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+                </div>
+            </section>
+            <section class="other-product clr">
+                <div class="wrap clr">
+                    <h1 class="name-other-product">other Hair Kits</h1>
+                    <a href="#" class="hair-kit-blue">
+                        <div class="product-wrap">
+                            <div class="product-kit-info">
+                                <h2>The Blue Kit</h2>
+                                <div class="product-rating">
+                                    <img src="./images/stars.png" alt="star-quantity">
+                                    <span class="count-rating">6385 Reviews</span>
+                                </div>
+                                <ul>
+                                    <li>Basic hair loss prevention system</li>
+                                    <li>15 key active ingedients</li>
+                                    <li>Biotin encourages healthy, stronger hair</li>
+                                    <li>Antioxidants keep hair healthy</li>
+                                </ul>
+                            </div>
+                            <div class="image-block">
+                                <img src="./images/bl.png" alt="kit-product-image">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="hair-kit-pro">
+                        <div class="product-wrap">
+                            <div class="product-kit-info">
+                                <h2>The Pro Kit</h2>
+                                <div class="product-rating">
+                                    <img src="./images/stars.png" alt="star-quantity">
+                                    <span class="count-rating">507 Reviews</span>
+                                </div>
+                                <ul>
+                                    <li>Maximum strength system</li>
+                                    <li>18 key active ingedients</li>
+                                    <li>Red Korean Seaweed Extract supports stronger healthier hair</li>
+                                </ul>
+                            </div>
+                            <div class="image-block">
+                                <img src="./images/pro.png" alt="kit-product-image">
+                                <img class="label" src="./images/label2.png" alt="label-2">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="result-after-using">
+                <div class="wrap">
+                    <h3>After using for 2 Minutes at a time, percent experienced improvement of the following to their hair:</h3>
+                    <div>
+                        <div class="percents col-2">
+                            <div class="percent-item">
+                                <div class="percent-name">Stronger Feeling Hair</div>
+                                <div class="percent-bar">
+                                    <div class="percent-status" style="width:81%;"></div>
+                                </div>
+                                <div class="percent-number">81%</div>
+                            </div>
+                            <div class="percent-item">
+                                <div class="percent-name">Thicker Feeling Hair</div>
+                                <div class="percent-bar">
+                                    <div class="percent-status" style="width:81%;"></div>
+                                </div>
+                                <div class="percent-number">81%</div>
+                            </div>
+                            <div class="percent-item">
+                                <div class="percent-name">Shinier Looking Hair</div>
+                                <div class="percent-bar">
+                                    <div class="percent-status" style="width:83%;"></div>
+                                </div>
+                                <div class="percent-number">83%</div>
+                            </div>
+                        </div>
+                        <div class="percents col-2">
+                            <div class="percent-item">
+                                <div class="percent-name">Improved Healthy Appearance of Hair</div>
+                                <div class="percent-bar">
+                                    <div class="percent-status" style="width:88%;"></div>
+                                </div>
+                                <div class="percent-number">88%</div>
+                            </div>
+                            <div class="percent-item">
+                                <div class="percent-name">Hair had More Body</div>
+                                <div class="percent-bar">
+                                    <div class="percent-status" style="width:85%;"></div>
+                                </div>
+                                <div class="percent-number">85%</div>
+                            </div>
+                            <div class="percent-item">
+                                <div class="percent-name">Healthier Feeling Condition of Scalp</div>
+                                <div class="percent-bar">
+                                    <div class="percent-status" style="width:83%;"></div>
+                                </div>
+                                <div class="percent-number">83%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-conclusion">*Based on results from independent expert graders from an 8 week clinical study. Subjects were instructed to allow shampoo to penetrate for <b>2 minutes</b> before rinsing and then follow with system conditioner.</div>
+                </div>
+            </section>
+            <div class="video">
+                <div class="wrap">
+                    <div class="video-container">
+                        <div class="frame-video">
+                            <img src="./images/you-tube-1.png" alt="video">
+                        </div>
+                        <div class="frame-video">
+                            <img src="./images/you-tube-2.png" alt="video">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="instruction clr">
+                <div class="wrap">
+                    <div class="step col-3">
+                        <img src="./images/step1.png" alt="step-1">
+                        <p>Gently massage <b>3-5 pumps</b><br> into hair and scalp.</p>
+                    </div>
+                    <div class="step col-3">
+                        <img src="./images/step2.png" alt="step-2">
+                        <p>Leave on <b>2-Minutes</b><br> for deep penetration.</p>
+                    </div>
+                    <div class="step col-3">
+                        <img src="./images/step3.png" alt="step-3">
+                        <p>Rinse</p>
+                    </div>
+                    <p>Repeat Steps 1-3 with your favourite <b>PURA D'OR</b> conditioner.<br>For best results use <b>daily.</b> Visible results after 3 month. Continue use thereafter. </p>
+                </div>
+            </div>
+            <footer>
+                <div class="sticky">
+                    <img src="./images/product-main.png" alt="product name">
+                    <span class="product-name">Advanced Therapy System</span>
+                    <span class="price">$39.99</span>
+                    <span class="special-price">«33% Savings + additional $10 OFF old Price!</span>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </footer>
         </div>
-        <div class="final-fails">
-        <span class="final-fail__title">Ошибки</span>
-        <span class="final-fail"></span><span>/3</span>
-    </div>
-    </div>
-    <div class="game__controls">
-        <a class="button game__start">Начать игру</a>
-    </div>
-    <div class="score">
-        <span class="score__title">Результат:</span>
-        <span class="score__value">0</span>
-    </div>
-    <div class="fails">
-        <span class="fail__title">Ошибки</span>
-        <span class="fail">0</span><span>/3</span>
-    </div>
-    <div class="task">
-        <span class="countdown-bar"></span>
-        <span class="countdown"></span>
-        <span>Какая столица страны</span>
-        <span id="country">Украина</span>
-        <span>?</span>
-    </div>
-    <div class="answer">
-        <div class="row">
-            <div id="answer-1" class="variant">Киев</div>
-        </div>
-        <div class="row">
-            <div id="answer-2" class="variant">Берлин</div>
-        </div>
-        <div class="row">
-            <div id="answer-3" class="variant">Вашингтон</div>
-        </div>
-        <div class="row">
-            <div id="answer-4" class="variant">Варшава</div>
-        </div>
-    </div>
-</div>
-</body>
+    </body>
 </html>
